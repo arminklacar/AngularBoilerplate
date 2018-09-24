@@ -28,8 +28,8 @@ module.exports = {
     new webpack.DefinePlugin({
       // global app config object
       config: JSON.stringify({
-        apiUrl: 'http://' + window.location.hostname + ':8090', // API BASE URL
-        GOOGLE_CLIENT_ID = "" // GOOGLE CLIENT ID
+        apiUrl: 'http://localhost:8090', // API BASE URL
+        GOOGLE_CLIENT_ID: '' // GOOGLE CLIENT ID
       })
     })
   ],
