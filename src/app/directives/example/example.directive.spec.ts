@@ -1,8 +1,8 @@
-import { ExampleDirectiveDirective } from './example-directive.directive';
+import { ExampleDirective } from './example.directive';
 
 describe('ExampleDirectiveDirective', () => {
   it('should create an instance', () => {
-    const directive = new ExampleDirectiveDirective();
+    const directive = new ExampleDirective();
     expect(directive).toBeTruthy();
   });
 });

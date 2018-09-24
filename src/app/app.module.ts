@@ -14,9 +14,12 @@ import { AppComponent } from './components/app/app.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 //Directives
-import { ExampleDirectiveDirective } from './directives/example/example-directive.directive';
+import { ExampleDirective } from './directives/example/example.directive';
 
 //Pipes
 import { ExamplePipe } from './pipes/example/example.pipe';
@@ -24,6 +27,7 @@ import { ExamplePipe } from './pipes/example/example.pipe';
 //Services
 import { AuthService } from './services/auth/auth.service';
 import { UserService } from './services/user/user.service';
+
 
 //Routes
 const appRoutes: Routes = [
@@ -45,8 +49,11 @@ const appRoutes: Routes = [
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    ExampleDirectiveDirective,
-    ExamplePipe
+    ExampleDirective,
+    ExamplePipe,
+    SidebarComponent,
+    NavbarComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
